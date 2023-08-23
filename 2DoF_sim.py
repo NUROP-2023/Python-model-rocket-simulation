@@ -145,8 +145,8 @@ def load_rocket_params(file_name):
         return rocket_params
 
 def main():
-    INPUT_FILENAME = "いにしゃんず種コン2023"
-    OUTPUT_FILENAME = "いにしゃんず種コン2023シミュレーション結果"
+    INPUT_FILENAME = "setting_file"
+    OUTPUT_FILENAME = "simulation_result"
     CSV_NAME = OUTPUT_FILENAME
 
     rocket_params = load_rocket_params(INPUT_FILENAME)
