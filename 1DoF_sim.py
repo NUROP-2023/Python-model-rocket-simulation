@@ -12,7 +12,7 @@ from scipy.integrate import odeint
 # エンジン諸元
 # C11-3の場合
 TOTAL_IMPULSE = 8.8         # トータルインパルス [N s]
-BURN_TIME = 0.8             # 燃焼時間 [s] 
+BURN_TIME = 0.8             # 燃焼時間 [s]
 PROP_MASS = 12 / 1000       # 推進薬量 [kg]
 ENGINE_MASS = 35.3 / 1000   # エンジン質量[kg]
 
@@ -20,7 +20,7 @@ ENGINE_MASS = 35.3 / 1000   # エンジン質量[kg]
 # いにしゃんず種コン2023の場合
 DIAMETER = 56 / 1000        # 機体直径 [m]
 BODY_MASS = 124 / 1000      # エンジン抜き機体質量 [kg]
-C_D = 0.55                  # 抗力係数 [-]   
+C_D = 0.55                  # 抗力係数 [-]
 
 # 物理定数
 RHO = 1.225                 # 大気密度 [kg/m^3]
@@ -70,12 +70,12 @@ def plot_graph(t, x, v):
     fig = plt.figure(tight_layout=True)
     ax = fig.add_subplot()
 
-    ax.plot(t, x, label = r"$x$")
-    ax.plot(t, v, label = r"$v$")
+    ax.plot(t, x, label=r"$x$")
+    ax.plot(t, v, label=r"$v$")
 
     ax.set_xlabel(r'$t$ [s]')
     ax.set_ylabel(r'$x$ [m], $v$ [m/s]')
-    ax.grid(color='black',linestyle='dotted')
+    ax.grid(color='black', linestyle='dotted')
     ax.legend()
 
     plt.show()
