@@ -73,9 +73,9 @@ def plot_graph(t, x, v):
     ax.plot(t, x, label=r"$x$")
     ax.plot(t, v, label=r"$v$")
 
-    ax.set_xlabel(r'$t$ [s]')
-    ax.set_ylabel(r'$x$ [m], $v$ [m/s]')
-    ax.grid(color='black', linestyle='dotted')
+    ax.set_xlabel(r"$t$ [s]")
+    ax.set_ylabel(r"$x$ [m], $v$ [m/s]")
+    ax.grid(color="black", linestyle="dotted")
     ax.legend()
 
     plt.show()
@@ -87,7 +87,7 @@ def save_fig(fig):
     fig.savefig(f"{FIGURE_NAME}.png", dpi=300)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     t, sol = simulation()
 
     x_sol = sol[:, 0]
